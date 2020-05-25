@@ -19,10 +19,12 @@ RUN pip3 install django-tinymce4-lite==1.8.0
 
 RUN pip3 install Pillow
 
-RUN mkdir /src
-WORKDIR /src
+RUN mkdir /usr/src/djang_blog
 
-COPY ./src /src
+COPY ./src /usr/src/djang_blog
+
+WORKDIR /usr/src/djang_blog
+
 
 EXPOSE 8000
 
