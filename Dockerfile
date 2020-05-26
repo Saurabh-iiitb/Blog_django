@@ -28,4 +28,6 @@ WORKDIR /usr/src/djang_blog
 
 EXPOSE 8000
 
+RUN python3 manage.py test
+
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
