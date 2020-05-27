@@ -19,6 +19,12 @@ RUN pip3 install django-tinymce4-lite==1.8.0
 
 RUN pip3 install Pillow
 
+RUN pip3 install python-logstash
+
+RUN pip3 install django-elasticsearch-dsl
+
+RUN pip3 install 'elasticsearch-dsl>=7.0.0,<8.0.0'
+
 RUN mkdir /usr/src/djang_blog
 
 COPY ./src /usr/src/djang_blog
