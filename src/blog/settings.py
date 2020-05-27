@@ -194,7 +194,7 @@ LOGGING = {
         'logstash': {
             'level': 'WARNING',
             'class': 'logstash.TCPLogstashHandler',
-            'host': 'localhost',
+            'host': 0.0.0.0,
             'port': 5959, # Default value: 5959
             'version': 1, # Version of logstash event schema. Default value: 0 (for backward compatibility of the library)
             'message_type': 'django',  # 'type' field in logstash message. Default value: 'logstash'.
